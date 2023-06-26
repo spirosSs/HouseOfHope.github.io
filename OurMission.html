@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript">
+    window.addEventListener("load", function() {
+        let hidden = document.querySelector("header nav#hidden-menu");
+        let nav = document.querySelector("header nav#burger-menu");
+
+        hidden.addEventListener("click", function() {
+            nav.classList.toggle("nodisplay");
+        });
+    });
+    </script>
+
+
+   <style>
+       main {
+           color: black;
+           background-color: brown;
+           display: flex;
+           flex-direction: row;
+            background-image: url(images/dog-lying-down.jpg);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            
+       }
+       main div#container {
+           width: 100%;
+           display: flex;
+           justify-content: space-between;
+           color: black;
+           
+       }
+       main div#container h1 {
+            font-size: 5rem;
+            width: 30%;
+            height: fit-content;
+            color: black;
+            margin-top: 20%;
+            text-align: center;
+       }
+       main div#container p {
+           margin-left: 1%;
+           color: white;
+           margin-bottom: 3%;
+           margin-top: 3%;
+           font-size: 1.4rem;
+           width: 70%;
+       }
+       @media screen and (max-width: 800px) {
+            main {
+                flex-wrap: wrap;
+            }
+            main > div#container > h1  {
+                overflow-wrap: break-word;
+              }
+             }
+
+   </style>
+
+
+</head>
+<body>
+    <div id = "wrapper">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/thePAw2.png" alt="">
+                </a>
+            </div>
+            <nav id="top-menu">
+                <a href="index.html">Home</a> 
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+            <nav id="hidden-menu">
+                &#9776;
+            </nav>
+            <nav id="burger-menu" class = "nodisplay">
+                <a href="index.html">Home</a> 
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <div id="container">
+                <h1>Our Mission</h1>
+                <p>For almost thirty years, the House Of Hope Society has operated as a private, non-profit organization, caring for lost and homeless pets. Last year, our Lynchburg Center for Pets and our Appomottox Pet Center cared for 4,962 pets and 92% of the pets went to new or existing homes. We are a 501c3, as well as a No Kill Humane Society, where we firmly believe that no healthy or treatable pet should be euthanized. <br> <br> 
+                     By operating the public shelter for the City of Lynchburg, we accept the stray or unwanted pets surrendered to us from those communities. We also have developed a more regional/state level focus. Since 2015, we helped  over 4,000 pets from other public shelters that otherwise may have had a negative outcome. <br> <br>
+                      We accept those that are easily adoptable as pets, as well as those that need special nurturing from abusive or neglectful experiences. Along with our Center for Pets, we also have a regional spay/neuter clinic located in Evington, VA which performs over 6,000 spay/neuter surgeries annually It is the help of the community that makes our life-saving programs possible. <br> 
+
+                   <br> Mission: Help pets in need through sheltering, adoption, education, spay/neuter, and community outreach. <br>
+                    
+                   <br>  Vision: A community free of homeless and neglected pets</p>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <a href="index.html">
+                    <img src="images/thePAw2.png" alt="">
+                </a>
+                <a href="socials">
+                    <img src="images/icons8-facebook.svg" alt="">
+                    <img src="images/icons8-twitter.svg" alt="">
+                    <img src="images/icons8-instagram.svg" alt="">
+                </a>
+
+                <p style="text-decoration: underline;">Made from Spiros</p>
+                
+            </div>
+           
+            <div>
+                <a href="index.html">Home</a> 
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html" class="menu" >Services</a>
+                <a href="Contact.html" class="menu">Contact</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript">
+    window.addEventListener("load", function() {
+        let hidden = document.querySelector("header nav#hidden-menu");
+        let nav = document.querySelector("header nav#burger-menu");
+
+        hidden.addEventListener("click", function() {
+            nav.classList.toggle("nodisplay");
+        });
+    });
+    </script>
+
+   <style>
+       body {
+           width: 100%;
+       }
+       main h2 {
+           text-align: center;
+           padding-bottom: 3%;
+           background-color: black;
+       }
+       main div#proto {
+           height: 550px;
+           display: flex;
+           flex-direction: column;
+           padding-top: 3%;
+           padding-left: 3%;
+           background-image: url(images/main-black-dog.jpg);
+           background-size: 100% 100%;
+       }
+       main div#proto h1 {
+           font-size: 4.5rem;
+           font-weight: 50;
+
+       }
+       main div#proto h3 {
+           padding-top: 2%;
+           font-size: 1.7rem;
+       }
+       main div#proto a {
+           margin-top: 2%;
+           margin-left: 9%;
+           height: 3rem;
+           background-color: rgb(41, 41, 61);
+           border-radius: 1%;
+           width: 10%;
+           padding-top: 1%;
+           text-align: center;
+           font-size: 1.2rem;
+           letter-spacing: 2px;
+           font-weight: bold;
+       }
+       main div#proto a:hover {
+        background-color: rgb(61, 61, 92);
+        transition: 1s
+       }
+     nav#second-main {
+         background-color: black;
+         height: 400px;
+         width: 100%;
+     }
+     nav:nth-child(1) {
+         padding-top: 70px;
+         text-align: center;
+     }
+     nav:nth-child(1) > p {
+         font-size: 45px;
+     }
+     main > nav#second-main >  nav:nth-child(2) {
+         margin-top: 40px;
+         text-align: center;
+     }
+     main > nav#second-main > nav:nth-child(2) > p {
+         letter-spacing: 1px;
+     }
+     nav#second-main > h2 {
+         background-color: black;
+         margin-top: 5%;
+         text-align: center;
+         margin-bottom: 2%;
+     }
+     main > div#third-main {
+         background-color: black;
+         text-align: center;
+         width: 100%;
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content: space-around;
+     }
+     main div#third-main > figure > img {
+         background-color: black;
+         border-radius: 2px;
+         width: 100%;
+         height: 300px;
+         display: flex;
+         justify-content: space-around;
+     }
+     main div#third-main > figure > figcaption {
+         background-color: black;
+         margin-top: 7%;
+         width: 100%;
+         margin-bottom: 20%;
+     }
+     main > div#four-main {
+         background-color: black;
+         width: 100%;
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content: space-around;
+     }
+     main div#four-main > figure > img {
+         width: 100%;
+         height: 300px;
+         display: flex;
+         justify-content: space-around;
+     }
+     main div#four-main > figure > figcaption {
+         margin-top: 7%;
+         width: 100%;
+         text-align: center;
+         margin-bottom: 20%;
+     }
+     main > div#five-main {
+         background-color: black;
+         text-align: center;
+         width: 100%;
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content: space-around;
+     }
+     main div#five-main > figure > img {
+         width: 100%;
+         height: 300px;
+         display: flex;
+         justify-content: space-around;
+     }
+     main div#five-main > figure > figcaption {
+         margin-top: 7%;
+         width: 100%;
+         margin-bottom: 20%;
+     }
+
+    @media screen and (max-width: 550px) {
+        main {
+        flex-wrap: wrap;
+        }
+        main > h2  {
+            overflow-wrap: break-word;
+            background-color: black;
+            margin-top: 4%;
+        }
+             }
+        main nav#second-main nav:nth-child(2) > p {
+            background-color: black;
+        }
+        main > div#third-main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        main > div#four-main {
+        display: flex;
+            flex-wrap: wrap;
+        }
+        main > div#five-main {
+        display: flex;
+            flex-wrap: wrap;
+        }
+   </style>
+</head>
+<body>
+    <div id = "wrapper">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/thePAw2.png" alt="">
+                </a>
+            </div>
+            <nav id="top-menu">
+                <a href="index.html">Home</a>
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+            <nav id="hidden-menu">
+                &#9776;
+            </nav>
+            <nav id="burger-menu" class = "nodisplay">
+                <a href="index.html">Home</a>
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <div id="proto">
+                <h1>Making new best <br> friends since 1994.</h1>
+                <h3>Bring Home a New Rescued Dog.</h3>
+                <a href="Contact.html">Volunteer</a>
+            </div>
+
+
+            <nav id="second-main">
+                <nav>
+                    <p>Adopting is one of the best <br>
+                         things you can do.</p>
+                </nav>
+                <nav>
+                    <p>
+                    When you adopt, you’re not just giving a deserving dog a home. You’re also reducing <br>
+                    the demand for puppy mills and other industrial-scale breeding operations that put <br>
+                    profit before animal welfare.
+                    </p>
+                </nav>
+            </nav>
+            <h2>Meet Our Pups</h2>
+            <div id="third-main">
+
+                <figure>
+                    <img src="images/2-dog.jpg" alt="wall paper" />
+                    <figcaption>If you have young kids, Jasmine’s the perfect dog. <br>
+                        Part playmate, part nanny, she’ll tire them out <br>
+                        while keeping a watchful eye on everything. She <br>
+                        also loves to cuddle at night!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/3-dog.jpg" alt="wall paper" />
+                    <figcaption>Calm and wise, Pedro is the perfect companion <br>
+                        for an older individual looking for a less active <br>
+                         experience. Responds well to commands and has <br>
+                          a gorgeous, lustrous coat</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/4-dog.jpg" alt="wall paper" />
+                    <figcaption>Intelligent, alert and a bit mischievous, Michael is <br>
+                        always up for an adventure. Whether you’re <br>
+                        jumping in the car for a weekend road trip or <br>
+                        going for a run, he’ll be by your side.</figcaption>
+                </figure>
+            </div>
+            <div id="four-main">
+
+                <figure>
+                    <img src="images/5-dog.jpg" alt="wall paper" />
+                    <figcaption>Philippe is one of the most soulful dogs we’ve ever <br>
+                        had in our care. Though shy, he’s capable of deep <br>
+                        connection and is in search of a family who will <br>
+                        love and appreciate him.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/6-dog.jpg" alt="wall paper" />
+                    <figcaption> If it’s tricks you’re after, Dominic is your dog. He’s a <br>
+                        pro at running, fetching and catching a frisbee <br>
+                         mid-flight. We can’t imagine a better companion <br>
+                          for an active couple.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/7-dog.jpg" alt="wall paper" />
+                    <figcaption>Tia is all about relaxation and is looking for <br>
+                        someone who enjoys naps, lounging on the couch <br>
+                         and gentle evening walks. She’s diabetic, but we’ll <br>
+                          walk you through her care routine.</figcaption>
+                </figure>
+            </div>
+            <div id="five-main">
+
+                <figure>
+                    <img src="images/8-dog.jpg" alt="wall paper" />
+                    <figcaption>Philippe is one of the most soulful dogs we’ve ever <br>
+                        had in our care. Though shy, he’s capable of deep <br>
+                        connection and is in search of a family who will <br>
+                        love and appreciate him.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/9-dog.jpg" alt="wall paper" />
+                    <figcaption> If it’s tricks you’re after, Dominic is your dog. He’s a <br>
+                        pro at running, fetching and catching a frisbee <br>
+                         mid-flight. We can’t imagine a better companion <br>
+                          for an active couple.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/10-dog.jpg" alt="wall paper" />
+                    <figcaption>Tia is all about relaxation and is looking for <br>
+                        someone who enjoys naps, lounging on the couch <br>
+                         and gentle evening walks. She’s diabetic, but we’ll <br>
+                          walk you through her care routine.</figcaption>
+                </figure>
+            </div>
+         </div>
+        </main>
+        <footer>
+            <div>
+                <a href="index.html">
+                    <img src="images/thePAw2.png" alt="">
+                </a>
+                <a href="facebook.com">
+                    <img src="images/icons8-facebook.svg" alt="">
+                    <img src="images/icons8-twitter.svg" alt="">
+                    <img src="images/icons8-instagram.svg" alt="">
+                </a>
+
+                <p style="text-decoration: underline;">Made from Spiros</p>
+
+            </div>
+
+            <div>
+                <a href="index.html">Home</a>
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html" class="menu" >Services</a>
+                <a href="Contact.html" class="menu">Contact</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

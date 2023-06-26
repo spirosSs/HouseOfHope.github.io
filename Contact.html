@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript">
+    window.addEventListener("load", function() {
+        let hidden = document.querySelector("header nav#hidden-menu");
+        let nav = document.querySelector("header nav#burger-menu");
+
+        hidden.addEventListener("click", function() {
+            nav.classList.toggle("nodisplay");
+        });
+    });
+    </script>
+
+
+   <style>
+      main {
+        background-color: white;
+      }
+      main > div#container {
+          display: flex;
+      }
+      main > div#container > nav#left-row {
+          padding-top: 2%;
+          width: 50%;
+          padding-left: 3%;
+          height: 600px;
+      }
+      main > div#container > nav#left-row > h1 {
+          color: black;
+          letter-spacing: 3px;
+          font-weight: bold;
+      }
+      main > div#container > nav#left-row > h3 {
+          color: black;
+          font-weight: bold;
+          padding-top: 10%;
+          font-size: 1.6rem;
+      }
+      main > div#container > nav#left-row > p {
+          
+          color: black;
+          padding-top: 10%;
+         
+      }
+      main > div#container > nav#right-row  {
+          width: 100%;
+          padding-left: 25%;
+      }
+      main > div#container > nav#right-row > input {
+          border: solid thin lightgrey;
+          border-radius: 2%;
+          padding: 14px;
+          width: 80%;
+      }
+      main > div#container > nav#right-row > input.name {
+          width: 38%;
+      }
+      main > div#container > nav#right-row > input.name1 {
+          width: 38%;
+          margin-left: 3.5%;
+      }
+      textarea {
+        border: solid thin lightgrey;
+        width: 80%;
+        padding: 10px;
+        height: 10rem;
+      }
+      main > div#container > nav#right-row p {
+          color:  black;
+          padding-top: 4%;
+          padding-bottom: 2%;
+          font-size: 1.4rem;
+      }
+      main > div#container > nav#right-row > input#button {
+          background-color: black;
+          margin-top: 4%;
+          color: white;
+          font-weight: bold;
+          font-size: 1.1rem;
+      }
+      main > div#container > nav#right-row > input#button:hover {
+          cursor: pointer;
+          transition: 1s;
+          background-color: rgb(49, 49, 49);
+      }
+      main > div#map {
+          height: auto;
+          padding-top: 4%;
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding-bottom: 4%;
+          padding-right: 9%;
+      }
+      main > div#map > h2 {
+          height: auto;
+          width: 50%;
+          padding-left: 3%;
+          padding-top: 10%;
+          color: black;
+          justify-content: flex-end;
+      }
+      main > div#map > iframe {
+          width: 50%;
+      }
+      @media screen and (max-width: 960px) {
+            main {
+                flex-wrap: wrap;
+            }
+            main > div#map > h2  {
+                padding-top: 40%;
+              }
+             }
+             @media screen and (max-width: 688px) {
+            main {
+                flex-wrap: wrap;
+            }
+            main > div#map > h2  {
+                display: none;
+              }
+              main > div#map > iframe {
+                  padding-top: 290px;
+                  width: 100%;
+              }
+             }
+
+
+
+
+   </style>
+
+
+</head>
+<body>
+    <div id = "wrapper">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/thePAw2.png" alt="">
+                </a>
+            </div>
+            <nav id="top-menu">
+                <a href="index.html">Home</a> 
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+            <nav id="hidden-menu">
+                &#9776;
+            </nav>
+            <nav id="burger-menu" class = "nodisplay">
+                <a href="index.html">Home</a> 
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+
+        </header>
+
+        <main>
+            <div id="container">
+                <nav id="left-row">
+
+                    <h1>Get Involved</h1>
+
+                    <h3>Adopt</h3>
+
+                    <p>A rescue dog is a dog that is trained to assist rescue workers in relief efforts and toward other forms of rescue, whether from snow, fire, hazards, attacks, etc. Rescue dogs have also come to be known as dogs that have been placed in a new home after being neglected, abused, or abandoned by their previous owners.</p>
+
+                    <h3>Volunteer</h3>
+
+                    <p>“Volunteers do not necessarily have the time; they just have the heart.” “You make a living by what you get. You make a life by what you give.” “Volunteers are the only human beings on the face of the earth who reflect this nation's compassion, unselfish caring, patience, and just plain loving one another.”</p>
+                </nav>
+
+                <nav id="right-row">
+                    <p>Name *</p>
+                    <input type="text" placeholder="First Name" class="name" >
+                    <input type="text" placeholder="Last Name" class="name1"> <br>
+                    <p>Email *</p>
+                    <input type="email" placeholder="Email"> <br>
+                    <p>Subject *</p>
+                    <input type="text" placeholder="Subject"> <br>
+                    <p>Message *</p>
+                    <textarea placeholder="Message"></textarea> <br>
+
+                    <input type="submit" value="Submit" id="button">
+                </nav>
+            </div>
+            <div id="map">
+                <h2>Find Us Here </h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.2721178097945!2d-79.16244518483707!3d37.407042579828065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d99c9e2d7c93%3A0x4a8a128158de7962!2sOrchard%20St%2C%20Lynchburg%2C%20VA%2024501%2C%20USA!5e0!3m2!1sen!2sgr!4v1645368323767!5m2!1sen!2sgr" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></iframe>
+            </div>
+            
+        </main>
+
+        <footer>
+            <div>
+                <a href="index.html">
+                    <img src="images/thePAw2.png" alt="">
+                </a>
+                <a href="socials">
+                    <img src="images/icons8-facebook.svg" alt="">
+                    <img src="images/icons8-twitter.svg" alt="">
+                    <img src="images/icons8-instagram.svg" alt="">
+                </a>
+
+                <p style="text-decoration: underline;">Made from Spiros</p>
+                
+            </div>
+           
+            <div>
+                <a href="index.html">Home</a> 
+                <a href="OurMission.html">Our Mission</a>
+                <a href="Team.html">Team</a>
+                <a href="Services.html" class="menu" >Services</a>
+                <a href="Contact.html" class="menu">Contact</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 
